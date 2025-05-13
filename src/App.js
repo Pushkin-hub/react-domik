@@ -1,24 +1,29 @@
-import logo from './logo.svg';
 import './App.css';
+import QuoteOfTheDay from './components/quotesApp';
+import Magic8Ball from './components/magicBall';
+import RandomNumberGenerator from './components/numberGenerator';
+import TrafficLight from './components/trafficLight';
+import TrafficLight2 from './components/TrafficLight2';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div>
+        <QuoteOfTheDay/>
+      </div>
+      <div>
+        <Magic8Ball/>
+      </div>
+      <div>
+        <RandomNumberGenerator/>
+      </div>
+      <div>
+        <TrafficLight/>
+      </div>
+      <div>
+        <TrafficLight2/>
+      </div>
+    </>
   );
 }
 
